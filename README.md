@@ -1,20 +1,24 @@
-# 🎯 Generador QR (vanilla JS)
+# 🎯 Generador de Códigos QR
 
-Página estática que crea códigos QR sin dependencias de build.  
-Sube el repo a GitHub y actívalo en **GitHub Pages** para tener tu propio generador online.
+Un generador de códigos QR moderno y fácil de usar, construido con HTML, CSS y JavaScript puro. Perfecto para crear códigos QR personalizados con colores y tamaños ajustables.
 
-## Uso rápido
-1. Haz clic en [`Use this template`](https://github.com/new) o clona el repo.  
-2. Activa GitHub Pages:  
-   Settings → Pages → Source → Deploy from a branch → `main` /root.  
-3. Visita `https://TU_USUARIO.github.io/NOMBRE_DEL_REPO/`.
+![QR Generator Preview](https://via.placeholder.com/600x400/667eea/ffffff?text=QR+Code+Generator)
 
-## Local
-Abre `index.html` directamente en el navegador.
+## ✨ Características
 
-## Stack
-- HTML5 + CSS3 + JavaScript vanilla  
-- [qrcodejs4](https://www.npmjs.com/package/qrcodejs4) (14 kB, CDN)
+- 🎨 **Personalizable**: Cambia colores y tamaños
+- 📱 **Responsive**: Funciona en todos los dispositivos
+- ⚡ **Rápido**: Generación instantánea de códigos QR
+- 💾 **Descargable**: Guarda tus códigos QR en PNG
+- 📋 **Copiable**: Copia códigos QR al portapapeles
+- 🎯 **Fácil de usar**: Interfaz intuitiva
 
-## Licencia
-MIT – haz lo que quieras.
+## 🚀 Uso
+
+1. Abre `index.html` en tu navegador
+2. Ingresa el texto o URL que deseas convertir
+3. Personaliza el tamaño y colores si lo deseas
+4. Haz clic en "Generar QR"
+5. ¡Descarga o copia tu código QR!
+
+## 📁 Estructura del Proyecto
