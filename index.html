@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Generador QR | Vanilla JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Generador de códigos QR</h1>
+
+    <input id="texto" type="text" placeholder="Escribe texto o URL…" />
+    <button id="btn">Generar QR</button>
+
+    <div id="canvas"></div>
+
+    <footer>
+      <small>Hecho con ❤️ y <a href="https://cdn.jsdelivr.net/npm/qrcodejs4@1.04" target="_blank" rel="noopener">qrcodejs4</a></small>
+    </footer>
+  </main>
+
+  <!-- Librería QR (14 kB) -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs4@1.04/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
