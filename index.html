@@ -1,27 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <title>Generador QR | Vanilla JS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Códigos QR</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="card">
-    <h1>Generador de códigos QR</h1>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Generador de Códigos QR</h1>
+            <p>Crea códigos QR personalizados en segundos</p>
+        </div>
+       
+        <div class="input-section">
+            <div class="input-group">
+                <label for="text-input">Texto o URL:</label>
+                <textarea
+                    id="text-input"
+                    placeholder="Ingresa el texto o URL que quieres convertir en código QR..."
+                    rows="3"
+                ></textarea>
+            </div>
+           
+            <div class="options-group">
+                <div class="option">
+                    <label for="size">Tamaño:</label>
+                    <select id="size">
+                        <option value="128">128x128</option>
+                        <option value="256" selected>256x256</option>
+                        <option value="384">384x384</option>
+                        <option value="512">512x512</option>
+                    </select>
+                </div>
+               
+                <div class="option">
+                    <label for="color-dark">Color QR:</label>
+                    <input type="color" id="color-dark" value="#000000">
+                </div>
+               
+                <div class="option">
+                    <label for="color-light">Fondo:</label>
+                    <input type="color" id="color-light" value="#ffffff">
+                </div>
+            </div>
+           
+            <button id="generate-btn" class="generate-btn">
+                <span class="btn-text">Generar QR</span>
+                <span class="btn-loading" style="display: none;">Generando...</span>
+            </button>
+        </div>
+       
+        <div class="qr-section">
+            <div id="qr-code" class="qr-container"></div>
+           
+            <div class="qr-actions" style="display: none;">
+                <button id="download-btn" class="download-btn">
+                    📥 Descargar PNG
+                </button>
+                <button id="copy-btn" class="copy-btn">
+                    📋 Copiar Imagen
+                </button>
+            </div>
+        </div>
+    </div>
 
-    <input id="texto" type="text" placeholder="Escribe texto o URL…" />
-    <button id="btn">Generar QR</button>
-
-    <div id="canvas"></div>
-
-    <footer>
-      <small>Hecho con ❤️ y <a href="https://cdn.jsdelivr.net/npm/qrcodejs4@1.04" target="_blank" rel="noopener">qrcodejs4</a></small>
-    </footer>
-  </main>
-
-  <!-- Librería QR (14 kB) -->
-  <script src="https://cdn.jsdelivr.net/npm/qrcodejs4@1.04/qrcode.min.js"></script>
-  <script src="script.js"></script>
+    <!-- Librería QRCode.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
